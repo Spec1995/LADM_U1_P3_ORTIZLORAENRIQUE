@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor:"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/valorInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese un valor"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtVector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Posicion en vector (0..9):"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/vectorPosicion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Posicion VECTOR"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAsignar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:text="Asignar" />
+
+            <Button
+                android:id="@+id/btnMostrar_Todos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:text="Mostrar Todos" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="escriba aqui su nombre de archivo"
+            android:paddingTop="20dp" />
+
+        <Button
+            android:id="@+id/btnGuardarSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Guardar en memoria SD" />
+
+        <TextView
+            android:id="@+id/txtLeer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="escriba aqui nombre de archivo" />
+
+        <Button
+            android:id="@+id/btnLeerSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Leer desde memoria SD" />
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
